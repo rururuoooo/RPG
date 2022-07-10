@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/RPG.css">
+  <title>課題RPG</title>
+</head>
+<body>
+  <div id="title">
+    <div id="firstPage">
+      <p>タイトル</p>
+      <span id="start">START</span>
+      <span id="continue" hidden>CONTINUE</span>
+    </div>
+  </div>
+  <div id="SelectCharacter">
+    <p>キャラクターを選んでください</p>
+    <div id="characters">
+      <div id="Frank" class="CH"><img src="css/imges/Frank.png"></div>
+      <div id="Elna" class="CH"><img src="css/imges/Elna.png"></div>
+      <div id="Elvin" class="CH"><img src="css/imges/Elvin.png"></div>
+    </div>
+    <p>プレーヤー名を選択してください！！<input id="inputName"></p>
+    <button id="GoField" disabled>決定</button>
+  </div>
+  <div id="field">
+    <div id="status">
+      <div class="statusbox">
+        <p>キャラクターのLv<span id='level'></span></p>
+        <p>歩数<span id="CutWalk"></span></p>
+        <p>y軸歩数:<span id="Yaxis"></span></p>
+        <p>X軸歩数:<span id="Xaxis"></span></p>
+      </div>
+      <div id="statusbox">
+        <p>倒した敵の数<span id="defeatedEnemies"></span></p>
+        <p>敵出現平均歩数<span id="averageEnemies"></span></p>
+        <p>敵出現ログ<span id="appearEnemies"></span></p>
+      </div>
+    </div>
+    <table id="WayTable">
+      <tr>
+        <td></td>
+        <td><p class="walk" id="forward">▲</p></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><p class="walk" id="lefrt">◀</p></td>
+        <td></td>
+        <td><p class="walk" id="right">▶</p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><p class="walk" id="back">▼</p></td>
+        <td></td>
+      </tr>
+    </table>
+    <div id="Flat">
+      <div id="FlatMonster"></div>
+    </div>
+    <div class="status"></div>
+    <div id="Forest">
+      <div id="ForestMonster"></div>
+    </div>
+    <div id="Swamp">
+      <div id="SwampMonster"></div>
+    </div>
+    <div id="command">
+      <div id="">
+        <p id="fight"> たたかう</p>
+        <p id="escape"> にげる</p>
+      </div>
+      <div id="message"></div>
+    </div>
+  </div>
+  <div id="Loser">
+    <h1>GameOver</h1>
+  </div>
+  <script src="js/RPG.js"></script>
+</body>
+</html>
+
+
+・Class構文
+・extendsでクラスの継承
